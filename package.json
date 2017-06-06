@@ -1,7 +1,7 @@
 {
     "name": "profoundjs-iconv-lite",
     "description": "Convert character encodings in pure javascript.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     
     "keywords": ["iconv", "convert", "charset", "icu"],
