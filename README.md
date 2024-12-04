@@ -163,6 +163,25 @@ Then run in terminal:
 $ npm publish
 ```
 
+## Generating Conversion Table for a CCSID
+
+### Compiling 
+
+In a 5250 Session run:
+```
+CRTBNDCPP PGM(YOUR_LIB/GEN_TABLE) SRCSTMF('/path/to/iconv-lite/generation/gen_table.cpp')
+```
+
+### Generating
+
+In a 5250 session run:
+```
+CALL YOUR_LIB/GEN_TABLE 'ccsid'
+```
+
+The STDOUT of this script can then be added into the `encodings/sbcs-data.js` file to be used as the character conversion table.
+
+
 ## Adoption
 [![NPM](https://nodei.co/npm-dl/iconv-lite.png)](https://nodei.co/npm/iconv-lite/)
 [![Codeship Status for ashtuchkin/iconv-lite](https://www.codeship.io/projects/81670840-fa72-0131-4520-4a01a6c01acc/status)](https://www.codeship.io/projects/29053)
