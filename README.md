@@ -170,6 +170,16 @@ CALL YOUR_LIB/GEN_TABLE 'ccsid'
 
 The STDOUT of this script can then be added into the `encodings/sbcs-data.js` file to be used as the character conversion table.
 
+## Publishing
+
+**Note: Make sure to bump the version number**
+
+If there are any new files which should not be included in the release, add them into the `.npmignore`
+
+Then run in terminal:
+```bash
+$ npm publish
+```
 
 ## Adoption
 [![NPM](https://nodei.co/npm-dl/iconv-lite.png)](https://nodei.co/npm/iconv-lite/)
